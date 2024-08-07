@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test Site</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- 添加网站作者，描述 -->
+        <meta name="author" content="kaipol" />
+        <meta name="description" content="This is a test site" />
+
+        <!-- 添加css样式-->
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="styles/mini-table.css" />
+        <!-- 添加网站图标-->
+        <link rel="icon" href="images/i-002.ico" />
+
+        <!-- 设置字体 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- 添加js文件,defer表示后加载js文件-->
+        <script src="scripts/main.js" defer></script>
+        "
+
+        <!-- 添加highlight.js代码高亮 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Test Site1</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><span style="color: blue">Home</span></li>
+                <li><a href="pictures.html">Picture</a></li>
+                <li><a href="button.html">Button</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h1 id="first head">Welcome to my site</h1>
+
+                <a
+                    href="https://kaipol.github.io"
+                    title="Github Page"
+                    target="_blank"
+                    ><strong>My Blogs</strong></a
+                >
+
+                <p id="first-paragraph">This is a test paragraph</p>
+
+                <!--添加图片-->
+                <figure>
+                    <a
+                        href="https://kaipol.github.io"
+                        title="Github Page"
+                        target="_blank"
+                    >
+                        <img
+                            src="./images/i-010.png"
+                            alt="This is a test image"
+                            width="50%"
+                        />
+                    </a>
+                    <figcaption>
+                        Figure 1: This is a picture with URL
+                    </figcaption>
+
+                    <img
+                        src="./images/i-008.jpg"
+                        alt='This is a "test" image'
+                        width="50%"
+                    />
+                    <figcaption>
+                        Figure 2: This is a picture with local file
+                    </figcaption>
+                </figure>
+                <br />
+
+                <!--添加外部视频-->
+                <iframe
+                    id="youtube"
+                    width="80%"
+                    height="508"
+                    src="https://www.youtube.com/embed/hm3M8O9VU0k"
+                    title="미사키의 하루"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe
+                ><br />
+                <a
+                    href="https://www.youtube.com/watch?v=hm3M8O9VU0k"
+                    target="_blank"
+                    >点击查看原视频</a
+                >
+
+                <br />
+                <iframe
+                    src="//player.bilibili.com/player.html?isOutside=true&aid=218871639&bvid=BV1o8411x7aE&cid=855664393&p=1&autoplay=0&high_quality=1s"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                    width="70%"
+                    height="500"
+                ></iframe
+                ><br />
+                <a
+                    href="https://www.bilibili.com/video/BV1o8411x7aE"
+                    target="_blank"
+                    >点击查看原视频</a
+                >
+
+                <!--添加内部视频-->
+                <!--<video controls width="400" height="400" autoplay loop循环播放 muted默认静音 preload="auto" poster="poster.png">
+                <source src="rabbit320.mp4" type="video/mp4" />
+                <source src="rabbit320.webm" type="video/webm" />
+                <p>你的浏览器不支持此视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+            </video>
+            //-->
+
+                <!--嵌入地图
+            <iframe id="openstreetmap" width="425" height="350"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=109.36996393460659%2C24.31958736940015%2C109.37571995515255%2C24.322627913512562&amp;layer=mapnik"
+                style="border: 1px solid black" width="900"></iframe><br /><a
+                href="https://www.openstreetmap.org/#map=18/24.32111/109.37284">查看更大的地图</a><br />
+                -->
+
+                <!--嵌入表格-->
+                <table>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <th>First row</th>
+                        <td>The first cell.</td>
+                        <td>The second cell.</td>
+                    </tr>
+                    <tr>
+                        <th>Second row</th>
+                        <td>The third cell.</td>
+                        <td>The fourth cell.</td>
+                    </tr>
+                </table>
+
+                <p class="class-1">This is make me drained</p>
+                <h2 id="second head">This is the second head</h2>
+
+                <input type="text" placeholder="Enter your thoughts" />
+
+                <!--无序列表-->
+                <ul>
+                    <li>This is the <strong>first</strong> item</li>
+                    <li>This is the <em>second</em> item</li>
+                    <li>This is the <mark>third</mark> item</li>
+                </ul>
+
+                <a href="#first head">Go to the first head</a>
+                <a href="#second head">Go to the second head</a>
+                <br />
+
+                <button><span id="change user">切换用户</span></button>
+                <br /><br />
+                <button><span id="add pic">添加图片</span></button>
+
+                <!--有序列表-->
+                <ol>
+                    <li>This is the first item</li>
+                    <li>This is the second item</li>
+                    <li>This is the third item</li>
+                </ol>
+
+                <time datetime="2024-7-30">July 30, 2024</time>
+            </article>
+
+            <button><span id="add list">添加列表元素</span></button>
+            <hr />
+
+            <h2>html代码</h2>
+
+            <pre><code>
+        const para = document.querySelector('p');
+        para.onclick = function() {
+          alert('噢，噢，噢，别点我了。');
+        }
+        </code></pre>
+
+            <p>
+                请不要使用 <code>&lt;font&gt;</code> 、
+                <code>&lt;center&gt;</code> 等表象元素。
+            </p>
+
+            <p>
+                在上述的 JavaScript 示例中，<var>para</var> 表示一个段落元素。
+            </p>
+            <p>
+                按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd> 选择全部内容。
+            </p>
+
+            <pre><code>
+        $ ping mozilla.org
+        <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+        64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
+        </code></pre>
+
+            <aside>
+                C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>
+                <br />
+                x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
+                <br />
+            </aside>
+        </main>
+    </body>
+</html>
