@@ -1,7 +1,9 @@
 {
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-google": "^0.14.0",
+    "@eslint/js": "^10.0.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
     "prettier": "^3.3.3"
   },
   "name": "web-project",
