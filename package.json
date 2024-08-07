@@ -2,9 +2,9 @@
   "devDependencies": {
     "@eslint/js": "^10.0.0",
     "eslint": "^9.8.0",
-    "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.0.1"
   },
   "name": "web-project",
   "version": "1.0.0",
