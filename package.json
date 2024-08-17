@@ -17,6 +17,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@million/lint": "^1.0.0-rc.84",
     "tailwindcss": "^3.4.7"
   }
 }

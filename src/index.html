@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <title>Test Site</title>
@@ -25,7 +25,6 @@
 
         <!-- 添加js文件,defer表示后加载js文件-->
         <script src="scripts/main.js" defer></script>
-        "
 
         <!-- 添加highlight.js代码高亮 -->
         <link
@@ -42,59 +41,60 @@
 
     <body>
         <header>
-            <h1>Test Site1</h1>
+            <h1>Welcome to my site</h1>
         </header>
 
-        <nav>
-            <ul>
-                <li><span style="color: blue">Home</span></li>
-                <li><a href="pictures.html">Picture</a></li>
-                <li><a href="button.html">Button</a></li>
-            </ul>
-        </nav>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#first-paragraph">First Paragraph</a></li>
+                    <li><a href="#second-head">Second Head</a></li>
+                    <li><a href="#change user">Change User</a></li>
+                    <li><a href="#add pic">Add Picture</a></li>
+                    <li><a href="#add list">Add List</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <main>
-            <article>
-                <h1 id="first head">Welcome to my site</h1>
+        <div id="menu">
+            <a href="index.html">Home</a>&emsp;&emsp;
+            <a href="pictures.html">Picture</a>&emsp;&emsp;
+            <a href="button.html">Button</a>&emsp;&emsp;
+            <a
+                href="https://kaipol.github.io"
+                title="Github Page"
+                target="_blank"
+                >My Blogs</a
+            >
+        </div>
 
+        <div class="content">
+            <p id="first-paragraph">This is a test paragraph</p>
+
+            <!--添加图片-->
+            <figure>
                 <a
                     href="https://kaipol.github.io"
                     title="Github Page"
                     target="_blank"
-                    ><strong>My Blogs</strong></a
                 >
-
-                <p id="first-paragraph">This is a test paragraph</p>
-
-                <!--添加图片-->
-                <figure>
-                    <a
-                        href="https://kaipol.github.io"
-                        title="Github Page"
-                        target="_blank"
-                    >
-                        <img
-                            src="./images/i-010.png"
-                            alt="This is a test image"
-                            width="50%"
-                        />
-                    </a>
-                    <figcaption>
-                        Figure 1: This is a picture with URL
-                    </figcaption>
-
                     <img
-                        src="./images/i-008.jpg"
-                        alt='This is a "test" image'
+                        src="./images/i-010.png"
+                        alt="This is a test image"
                         width="50%"
+                        draggable="true"
                     />
-                    <figcaption>
-                        Figure 2: This is a picture with local file
-                    </figcaption>
-                </figure>
-                <br />
+                </a>
+                <figcaption>Figure 1: This is a picture with URL</figcaption>
 
-                <!--添加外部视频-->
+                <figcaption>
+                    Figure 2: This is a picture with local file
+                </figcaption>
+            </figure>
+            <br />
+
+            <!--添加外部视频-->
+            <div class="iframe">
                 <iframe
                     id="youtube"
                     width="80%"
@@ -130,22 +130,24 @@
                     target="_blank"
                     >点击查看原视频</a
                 >
+            </div>
 
-                <!--添加内部视频-->
-                <!--<video controls width="400" height="400" autoplay loop循环播放 muted默认静音 preload="auto" poster="poster.png">
+            <!--添加内部视频-->
+            <!--<video controls width="400" height="400" autoplay loop循环播放 muted默认静音 preload="auto" poster="poster.png">
                 <source src="rabbit320.mp4" type="video/mp4" />
                 <source src="rabbit320.webm" type="video/webm" />
                 <p>你的浏览器不支持此视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
             </video>
             //-->
 
-                <!--嵌入地图
+            <!--嵌入地图
             <iframe id="openstreetmap" width="425" height="350"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=109.36996393460659%2C24.31958736940015%2C109.37571995515255%2C24.322627913512562&amp;layer=mapnik"
                 style="border: 1px solid black" width="900"></iframe><br /><a
                 href="https://www.openstreetmap.org/#map=18/24.32111/109.37284">查看更大的地图</a><br />
                 -->
 
+            <div class="table">
                 <!--嵌入表格-->
                 <table>
                     <tr>
@@ -163,73 +165,91 @@
                         <td>The fourth cell.</td>
                     </tr>
                 </table>
+            </div>
 
-                <p class="class-1">This is make me drained</p>
-                <h2 id="second head">This is the second head</h2>
+            <p class="class-1">This is make me drained</p>
+            <h2 id="second-head">This is the second head</h2>
 
-                <input type="text" placeholder="Enter your thoughts" />
+            <input type="text" placeholder="Enter your thoughts" />
+            <br /><br /><br />
 
+            <div id="cube" style="width: 4em; height: 8em; padding: 30px">
+                <div style="transform: translate3d(1em, 0em, 2em)">A</div>
+                <div style="transform: translate3d(4em, 0em, 2em)">B</div>
+                <div style="transform: translate3d(0em, 4em, 2em)">C</div>
+                <div style="transform: translate3d(4em, 4em, 2em)">D</div>
+                <div style="transform: translate3d(0em, 0em, -2em)">E</div>
+                <div style="transform: translate3d(4em, 0em, -2em)">F</div>
+                <div style="transform: translate3d(0em, 4em, -2em)">G</div>
+                <div style="transform: translate3d(4em, 4em, -2em)">H</div>
+            </div>
+
+            <div class="list">
                 <!--无序列表-->
                 <ul>
                     <li>This is the <strong>first</strong> item</li>
                     <li>This is the <em>second</em> item</li>
                     <li>This is the <mark>third</mark> item</li>
                 </ul>
-
-                <a href="#first head">Go to the first head</a>
-                <a href="#second head">Go to the second head</a>
-                <br />
-
-                <button><span id="change user">切换用户</span></button>
-                <br /><br />
-                <button><span id="add pic">添加图片</span></button>
-
                 <!--有序列表-->
                 <ol>
                     <li>This is the first item</li>
                     <li>This is the second item</li>
                     <li>This is the third item</li>
                 </ol>
+            </div>
 
-                <time datetime="2024-7-30">July 30, 2024</time>
-            </article>
+            <a href="#first-head">Go to the first head</a>
+            <a href="#second-head">Go to the second head</a>
+            <br />
 
-            <button><span id="add list">添加列表元素</span></button>
+            <button><span id="change user">切换用户</span></button>
+            <br /><br />
+            <button><span id="add pic">添加图片</span></button>
+            <br />
+            <time datetime="2024-7-30">July 30, 2024</time>
+
+            <br />
+            <button class="button">
+                <span id="add list">添加列表元素</span>
+            </button>
             <hr />
 
             <h2>html代码</h2>
 
-            <pre><code>
-        const para = document.querySelector('p');
-        para.onclick = function() {
-          alert('噢，噢，噢，别点我了。');
-        }
-        </code></pre>
+            <div class="code">
+                <pre><code>
+                const para = document.querySelector('p');
+                para.onclick = function() {
+                alert('噢，噢，噢，别点我了。');
+                }
+            </code></pre>
 
-            <p>
-                请不要使用 <code>&lt;font&gt;</code> 、
-                <code>&lt;center&gt;</code> 等表象元素。
-            </p>
+                <p>
+                    请不要使用 <code>&lt;font&gt;</code> 、
+                    <code>&lt;center&gt;</code> 等表象元素。
+                </p>
 
-            <p>
-                在上述的 JavaScript 示例中，<var>para</var> 表示一个段落元素。
-            </p>
-            <p>
-                按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd> 选择全部内容。
-            </p>
+                <p>
+                    在上述的 JavaScript 示例中，<var>para</var>
+                    表示一个段落元素。
+                </p>
+                <p>
+                    按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> +
+                    <kbd>A</kbd> 选择全部内容。
+                </p>
 
-            <pre><code>
-        $ ping mozilla.org
-        <samp>PING mozilla.org (63.245.215.20): 56 data bytes
-        64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
-        </code></pre>
+                <pre><code>
+                $ ping mozilla.org
+                <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+                64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
+            </code></pre>
+            </div>
 
-            <aside>
-                C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>
-                <br />
-                x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
-                <br />
-            </aside>
-        </main>
+            C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>
+            <br />
+            x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
+            <br />
+        </div>
     </body>
 </html>

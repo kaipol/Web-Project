@@ -10,16 +10,27 @@ html {
 body {
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4d09d;
+    background-color: #e9c49f;
     padding: 0 auto 20px 20px;
     border: 5px solid black;
+}
+
+header {
+    padding: 10px;
+    text-decoration: underline dotted #de38ff;
+}
+
+#menu {
+    background-color: #e8d297;
+    text-align: center;
+    padding: 10px;
+    font-size: x-large;
 }
 
 h1 {
     margin: 0;
     padding: 20px 0;
     color: #00539f;
-    text-shadow: 3px 3px 1px black;
     text-align: center;
 }
 
@@ -29,10 +40,10 @@ img {
     width: 90%;
 }
 
-a {
+a[href="https://kaipol.github.io"]
+{
     color: #0000ff;
-    text-decoration: underline;
-    display: block;
+    font-size: x-large;
 }
 
 a:hover {
@@ -40,8 +51,8 @@ a:hover {
     text-decoration: none;
 }
 
+/*id=first-paragraph的样式*/
 #first-paragraph {
-    color: rgb(228, 39, 196);
     text-shadow: 2px 2px 2px #716f6f;
     color: red;
     width: 300px;
@@ -49,20 +60,29 @@ a:hover {
     border-width: 12px;
 }
 
-.class-1 {
-    color: #676d66;
+/* .class-1类的样式 */
+.class-1::first-line {
+    /* 设置文本颜色为红色 */
     color: red;
+    /* 设置宽度为300px */
     width: 300px;
+    /* 设置双线边框，颜色为#32a122，宽度为12px */
     border: thick double #32a122;
     border-width: 12px;
 }
 
-h1 {
-    color: blue;
+/*li元素样式*/
+ul > li {
+    list-style-type: square;
 }
 
-ul {
-    list-style-type: circle;
+ol {
+    list-style-type: decimal;
+}
+
+/*后代选择器*/
+li strong {
+    color: #ff0000;
 }
 
 pre {
@@ -76,4 +96,25 @@ input[type="text"] {
     height: 30px;
     border: 2px solid #000;
     border-radius: 5px;
+}
+
+/*为cube添加旋转动画*/
+#cube {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 20s linear infinite;
+}
+
+#cube > div {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(-0.1turn) rotateY(0turn);
+    }
+    to {
+        transform: rotateX(-0.1turn) rotateY(1turn);
+    }
 }

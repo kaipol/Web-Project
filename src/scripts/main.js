@@ -1,14 +1,14 @@
-let myImage = document.querySelector("img");
-let myHeading = document.querySelector("h1");
+const myImage = document.querySelector("img");
+const myHeading = document.querySelector("h1");
 
-let myButtonUsr = document.getElementById("change user");
-let myButtonPic = document.getElementById("add pic");
+const myButtonUsr = document.getElementById("change user");
+const myButtonPic = document.getElementById("add pic");
 
-let videoYoutube = document.getElementById("youtube");
-let videoBilibili = document.getElementById("bilibili");
-let mapOpenStreetMap = document.getElementById("openstreetmap");
+const videoYoutube = document.getElementById("youtube");
+const videoBilibili = document.getElementById("bilibili");
+const mapOpenStreetMap = document.getElementById("openstreetmap");
 
-let myButtonList = document.getElementById("add list");
+const myButtonList = document.getElementById("add list");
 const list = document.createElement("ul");
 const info = document.createElement("p");
 const html = document.querySelector("html");
@@ -17,7 +17,7 @@ document.body.appendChild(list);
 
 //添加用户按钮的点击事件
 myButtonUsr.onclick = function () {
-    let myName = prompt("请输入你的名字。");
+    const myName = prompt("请输入你的名字。");
     if (!myName) {
         myHeading.textContent = "Welcome to my site!";
     } else {
@@ -28,7 +28,7 @@ myButtonUsr.onclick = function () {
 
 //点击图片切换图片
 myImage.onclick = function () {
-    let mySrc = myImage.getAttribute("src");
+    const mySrc = myImage.getAttribute("src");
     if (mySrc === "./images/i-008.jpg") {
         myImage.setAttribute("src", "./images/i-011.jpg");
     } else {
