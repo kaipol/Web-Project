@@ -1,17 +1,19 @@
+//添加TheatreJS库,教程:https://www.theatrejs.com/docs/latest/getting-started/with-html-svg
+import "https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-and-studio.js";
+// We can now access Theatre.core and Theatre.studio from here
+const { core, studio } = Theatre;
+
+studio.initialize(); // Start the Theatre.js UI
+
 const myImage = document.querySelector("img");
 const myHeading = document.querySelector("h1");
 
 const myButtonUsr = document.getElementById("change user");
 const myButtonPic = document.getElementById("add pic");
 
-const videoYoutube = document.getElementById("youtube");
-const videoBilibili = document.getElementById("bilibili");
-const mapOpenStreetMap = document.getElementById("openstreetmap");
-
 const myButtonList = document.getElementById("add list");
 const list = document.createElement("ul");
 const info = document.createElement("p");
-const html = document.querySelector("html");
 document.body.appendChild(info);
 document.body.appendChild(list);
 
