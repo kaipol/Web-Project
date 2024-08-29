@@ -1,23 +1,15 @@
 {
-  "devDependencies": {
-    "@eslint/js": "^10.0.0",
-    "eslint": "^9.8.0",
-    "globals": "^15.9.0",
-    "prettier": "^3.3.3",
-    "typescript-eslint": "^8.0.1"
-  },
-  "name": "web-project",
+  "name": "deno-project",
   "version": "1.0.0",
+  "description": "A barebone deno project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@million/lint": "^1.0.0-rc.84",
-    "tailwindcss": "^3.4.7"
+    "deno_ls_plugin": "^0.1.0",
+    "typescript": "^3.3.1"
   }
 }

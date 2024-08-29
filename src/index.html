@@ -10,8 +10,8 @@
         <meta name="description" content="This is a test site" />
 
         <!-- 添加css样式-->
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="styles/mini-table.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/mini-table.css" />
         <!-- 添加网站图标-->
         <link rel="icon" href="images/i-002.ico" />
 
@@ -24,19 +24,24 @@
         />
 
         <!-- 添加js文件,defer表示后加载js文件-->
-        <script src="scripts/main.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
+        <script src="./scripts/button.js" defer></script>
 
         <!-- 添加highlight.js代码高亮 -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
         />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+            defer
+        ></script>
         <!-- and it's easy to individually load additional languages -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-        <script>
-            hljs.highlightAll();
-        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"
+            defer
+        ></script>
+
     </head>
 
     <body>
@@ -112,24 +117,6 @@
                     target="_blank"
                     >点击查看原视频</a
                 >
-
-                <br />
-                <iframe
-                    src="//player.bilibili.com/player.html?isOutside=true&aid=218871639&bvid=BV1o8411x7aE&cid=855664393&p=1&autoplay=0&high_quality=1s"
-                    scrolling="no"
-                    border="0"
-                    frameborder="no"
-                    framespacing="0"
-                    allowfullscreen="true"
-                    width="70%"
-                    height="500"
-                ></iframe
-                ><br />
-                <a
-                    href="https://www.bilibili.com/video/BV1o8411x7aE"
-                    target="_blank"
-                    >点击查看原视频</a
-                >
             </div>
 
             <!--添加内部视频-->
@@ -146,6 +133,15 @@
                 style="border: 1px solid black" width="900"></iframe><br /><a
                 href="https://www.openstreetmap.org/#map=18/24.32111/109.37284">查看更大的地图</a><br />
                 -->
+
+            <!--猜数游戏-->
+            <div class="game">
+                <h2>猜数游戏</h2>
+                <p>请猜一个1到100之间的整数。你拥有10次机会</p>
+                <input type="number" id="guess" min="1" max="100" />
+                <button id="submit">提交</button>
+
+                <p id="guessMessage"></p>
 
             <div class="table">
                 <!--嵌入表格-->
@@ -252,4 +248,5 @@
             <br />
         </div>
     </body>
+
 </html>

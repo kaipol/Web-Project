@@ -1,10 +1,3 @@
-//添加TheatreJS库,教程:https://www.theatrejs.com/docs/latest/getting-started/with-html-svg
-import "https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-and-studio.js";
-// We can now access Theatre.core and Theatre.studio from here
-const { core, studio } = Theatre;
-
-studio.initialize(); // Start the Theatre.js UI
-
 const myImage = document.querySelector("img");
 const myHeading = document.querySelector("h1");
 

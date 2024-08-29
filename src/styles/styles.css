@@ -60,6 +60,11 @@ a:hover {
     border-width: 12px;
 }
 
+#guess {
+    width: 150px;
+    height: 25px;
+}
+
 /* .class-1类的样式 */
 .class-1::first-line {
     /* 设置文本颜色为红色 */
